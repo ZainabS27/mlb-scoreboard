@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLB Scoreboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>MLB Teams & Scoreboard</h1>
+    
+    <!--Loading/Errors Display-->
+    <div id="loading-message"></div>
+    <div id="error-message"></div>
+
+    <!--Scoreboard-->
+    <section id="scoreboard">
+        <h2>Today's Games</h2>
+        <div id="scoreboard-container"></div>
+    </section>
+
+    <!--Team Selection Dropdown-->
+    <section id="team-selection">
+        <label for="team-select">Select a Team:</label>
+        <select id="team-select">
+            <option value="">Choose a team</option>
+        </select>
+    </section>
+
+    <!--Team Info-->
+    <section id="team-info">
+        <h2 id="team-name"></h2>
+        <img id="team-logo" src="" alt="Team Logo">
+        <p id="team-abbreviation"></p>
+
+        <p id="team-record"></p>
+        <p id="team-stadium"></p>
+
+        <!--Roster and Schedule Info-->
+        <div id="team-roster">
+            <h3>Roster</h3>
+            <ul id="roster-list"></ul>
+        </div>
+
+        <div id="team-schedule">
+            <h3>Schedule</h3>
+            <ul id="schedule-list"></ul>
+        </div>
+    </section>
+    
+</body>
+<script src="scripts/javascript.js"></script>
+</html>
